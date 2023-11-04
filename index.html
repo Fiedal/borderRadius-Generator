@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Border Radius Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p id="header">Border Radius Generator</p>
+            <hr>
+            <a class="link" target="_blank" href="https://github.com/Fiedal"><span id="author">by Fiedal</span><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="menu">
+            <div class="inMenuContainer">
+                <h3>Top Corners:</h3>
+                <div class="topInputs">
+                    <label for="topLeft">Left:</label>
+                    <input id="topLeft" type="number" min="0" max="100" value="0">
+                    <label for="topRight">Right:</label>
+                    <input id="topRight" type="number" min="0" max="100" value="0">
+                </div>
+                <h3>Bottom Corners:</h3>
+                <label for="botLeft">Left:</label>
+                <input id="botLeft" type="number" min="0" max="100" value="0">
+                <label for="botRight">Right:</label>
+                <input id="botRight" type="number" min="0" max="100" value="0">     
+            </div>
+            <div class="inMenuContainer">
+                <p id="preview"><span>border-radius</span>: <span id="phTL">0px</span> <span id="phTR">0px</span> <span id="phBL">0px</span> <span id="phBR">0px</span>;</p>
+                <button id="copy">Copy</button>
+            </div>
+        </div>
+        <div id="box" class="box">
+        </div>
+        <script src="https://kit.fontawesome.com/82f97e6d17.js" crossorigin="anonymous"></script>
+        <script src="code.js"></script>
+    </div>
+</body>
+</html>
